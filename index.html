@@ -211,11 +211,17 @@
              </select>
           </form>
           <script>
+              window.onload = function() {
+              var selectElement = document.getElementById('mySelect');
+               selectElement.selectedIndex = 0;
+                 };
+          </script>
+          <script>
              function showDropInfo() {
                 var sT = dropForm.dropSelect;
              }
           </script>
-          <h3>What is the higher number your child can count to?</h3>
+          <h3>What is the highest number your child can count to?</h3>
           <form name="dropForm1">
             <select name="dropSelect" onchange="showDropInfo1()">
               <option>-</option>
