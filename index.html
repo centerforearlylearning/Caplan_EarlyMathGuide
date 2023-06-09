@@ -247,7 +247,14 @@
                 window.location.href = selectedValue;
             }
             }
+            
+            window.onload = function() {
+                document.dropForm1.dropSelect1.selectedIndex = 0;
+                document.dropForm2.dropSelect2.selectedIndex = 0;
+                document.dropForm3.dropSelect3.selectedIndex = 0;
+            };
           </script>
+    
 
    </div>   
 
