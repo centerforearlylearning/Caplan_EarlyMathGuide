@@ -225,7 +225,7 @@
           </script>
           <h3>What is the highest number your child can count to?</h3>
           <form name="dropForm1">
-            <select name="dropSelect" onchange="advancePage()">
+            <select id="dropSelect1" name="dropSelect" onchange="advancePage()">
               <option>-</option>
               <option value="Bucket1/Bucket1Overall.html">0-5</option>
               <option value="Bucket2/Bucket2Overall.html">6-10</option>
@@ -250,6 +250,9 @@
                 window.location.href = selectedValue;
             }
             }
+            window.onbeforeunload = function() {
+            document.getElementById('dropSelect1').selectedIndex = 0;
+             }
         
           </script>
     
