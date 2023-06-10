@@ -225,7 +225,7 @@
           </script>
           <h3>What is the highest number your child can count to?</h3>
           <form name="dropForm1">
-            <select name="dropSelect" onchange="showDropInfo1()">
+            <select name="dropSelect" onchange="advancePage()">
               <option>-</option>
               <option value="Bucket1/Bucket1Overall.html">0-5</option>
               <option value="Bucket2/Bucket2Overall.html">6-10</option>
@@ -234,7 +234,8 @@
             </select>
           </form>
           <script>
-            function showDropInfo1() {
+            function advancePage() {
+              var sT = dropForm.dropSelect;
               const selectedValue = document.dropForm1.dropSelect.value;
             if (selectedValue === 'Bucket1/Bucket1Overall.html') {
                 window.location.href = selectedValue;
